@@ -1,5 +1,5 @@
 # Pull base image 
-FROM  python:3.7 
+FROM  python:3.6
 
 # set environment variable
 ENV PYTHONDONTWRITEBYTECODE 1
