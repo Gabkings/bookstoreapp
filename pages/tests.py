@@ -22,3 +22,9 @@ class HomepageTests(SimpleTestCase): # new
                         views.HomePageView.as_view().__name__
                         )
     
+    def test_aboutpage_url_resolves_aboutpageview(self):
+        view = resolve('/about/')
+        self.assertEqual(
+            view.func.__name__, 
+            views.AboutPageView.as_view().__name__
+        )
