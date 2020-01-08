@@ -8,4 +8,5 @@ urlpatterns = [
     # User management
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
+    path('books', include('books.urls'))
 ]
